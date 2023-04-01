@@ -18,7 +18,7 @@ app.use('/' , authRoute)
 app.use('/' , authMiddleware,  contacts)
 
 
-app.get('/' , authMiddleware, (req,res)=>{
+app.get('/' , (req,res)=>{
     res.send('hello world')
 })
 
