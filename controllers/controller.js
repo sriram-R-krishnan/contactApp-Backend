@@ -52,7 +52,7 @@ const createContact = async (req, res) => {
   const db = await connectDB();
   const collection = db.collection("contacts");
   const existingUser = await collection.findOne({ 
-    phoneNumber: phoneNumber, 
+  phoneNumber: phoneNumber, 
     emailID: emailID, 
     createdBy: decodedToken.id 
   })
