@@ -11,7 +11,7 @@ const authMiddleware = require("./middleware/auth")
 
 port = process.env.port
 
-app.use(express.static('./public'));
+// app.use(express.static('./public'));
 app.use(express.json());
 app.use(cors());
 app.use('/' , authRoute)
